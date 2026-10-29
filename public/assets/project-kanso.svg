@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="k-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0"/>
+      <stop offset="100%" stop-color="#EFE8DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#k-bg)"/>
+  
+  <rect x="30" y="25" width="740" height="450" rx="6" fill="#FFFFFF" stroke="#B7A89A" stroke-width="1.5"/>
+  <line x1="30" y1="75" x2="770" y2="75" stroke="#E8DCC6" stroke-width="1"/>
+  <text x="55" y="55" font-family="'Fraunces', serif" font-style="italic" font-size="18" fill="#722F37">Kanso Protocol</text>
+  <text x="200" y="53" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6E645D">// DISTRIBUTED CRDT REPLICATION ENGINE</text>
+  <rect x="635" y="40" width="110" height="24" rx="2" fill="#E8DCC6"/>
+  <text x="645" y="56" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#722F37">PEERS: 4 SYNCED</text>
+
+  <!-- Center Hub -->
+  <circle cx="400" cy="240" r="48" fill="#E8DCC6" stroke="#722F37" stroke-width="2"/>
+  <text x="375" y="238" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#722F37">MERKLE</text>
+  <text x="377" y="252" font-family="'JetBrains Mono', monospace" font-size="10" fill="#2A2421">DAG #89</text>
+
+  <!-- Peripheral Nodes -->
+  <g transform="translate(130, 130)">
+    <rect width="150" height="80" rx="4" fill="#FAF6F0" stroke="#B7A89A" stroke-width="1.5"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#2A2421">PEER: BROWSER_01</text>
+    <text x="14" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">CLOCK: [14, 2, 8]</text>
+    <text x="14" y="62" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6E645D">IndexedDB State OK</text>
+  </g>
+
+  <g transform="translate(520, 130)">
+    <rect width="150" height="80" rx="4" fill="#FAF6F0" stroke="#B7A89A" stroke-width="1.5"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#2A2421">PEER: WORKER_EU</text>
+    <text x="14" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">CLOCK: [14, 3, 8]</text>
+    <text x="14" y="62" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6E645D">Zero-Copy Sync</text>
+  </g>
+
+  <g transform="translate(130, 310)">
+    <rect width="150" height="80" rx="4" fill="#FAF6F0" stroke="#B7A89A" stroke-width="1.5"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#2A2421">PEER: NATIVE_IOS</text>
+    <text x="14" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">CLOCK: [13, 2, 7]</text>
+    <text x="14" y="62" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6E645D">BLE / WebRTC P2P</text>
+  </g>
+
+  <g transform="translate(520, 310)">
+    <rect width="150" height="80" rx="4" fill="#FAF6F0" stroke="#B7A89A" stroke-width="1.5"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#2A2421">PEER: DESKTOP</text>
+    <text x="14" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">CLOCK: [14, 3, 8]</text>
+    <text x="14" y="62" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6E645D">Encrypted at Rest</text>
+  </g>
+
+  <!-- Connection Edges -->
+  <line x1="280" y1="170" x2="360" y2="215" stroke="#722F37" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="520" y1="170" x2="440" y2="215" stroke="#722F37" stroke-width="2"/>
+  <line x1="280" y1="350" x2="360" y2="265" stroke="#B7A89A" stroke-width="2" stroke-dasharray="3,3"/>
+  <line x1="520" y1="350" x2="440" y2="265" stroke="#722F37" stroke-width="2"/>
+
+  <!-- Bottom Log Bar -->
+  <rect x="55" y="415" width="690" height="42" rx="2" fill="#F4EFE6"/>
+  <text x="70" y="440" font-family="'JetBrains Mono', monospace" font-size="11" fill="#2A2421"><tspan fill="#722F37">[CONFIRM]</tspan> Converged state in 11.4ms • Zero conflict branches • Hash: 0x9f7b..44c1</text>
+</svg>

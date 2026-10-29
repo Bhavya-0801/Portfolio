@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="a-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0"/>
+      <stop offset="100%" stop-color="#EFE8DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#a-bg)"/>
+  <rect x="35" y="25" width="730" height="450" fill="#FFFFFF" stroke="#B7A89A" stroke-width="1.5"/>
+  <line x1="35" y1="65" x2="765" y2="65" stroke="#B7A89A" stroke-width="1"/>
+  
+  <text x="60" y="50" font-family="'Fraunces', serif" font-size="16" font-weight="600" fill="#2A2421">ATELIER MONOLITH</text>
+  <text x="290" y="48" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">ISSUE NO. 14 — HIGH-PERFORMANCE COMMERCE</text>
+  <text x="670" y="48" font-family="'JetBrains Mono', monospace" font-size="10" fill="#6E645D">TTFB: 38ms</text>
+
+  <!-- Left Column -->
+  <g transform="translate(60, 95)">
+    <text x="0" y="35" font-family="'Fraunces', serif" font-size="42" font-weight="400" fill="#722F37" letter-spacing="-1">Material</text>
+    <text x="0" y="78" font-family="'Fraunces', serif" font-style="italic" font-size="42" font-weight="300" fill="#2A2421">Substance</text>
+    <line x1="0" y1="100" x2="240" y2="100" stroke="#B7A89A" stroke-width="1.5"/>
+    <text x="0" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#5A504A">
+      A headless architectural catalog engine.
+    </text>
+    <text x="0" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#5A504A">
+      Eliminating JS hydration overhead via CSS
+    </text>
+    <text x="0" y="165" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#5A504A">
+      Paged Media and streamed edge SQLite.
+    </text>
+    <rect x="0" y="190" width="145" height="30" fill="#E8DCC6" rx="2"/>
+    <text x="12" y="210" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#722F37">PAGESPEED: 100/100</text>
+  </g>
+
+  <!-- Right Visual -->
+  <g transform="translate(350, 95)">
+    <rect x="0" y="0" width="180" height="230" fill="#FAF6F0" stroke="#E8DCC6" stroke-width="1.5"/>
+    <rect x="15" y="15" width="150" height="120" fill="#EFE8DC"/>
+    <circle cx="90" cy="75" r="35" fill="none" stroke="#722F37" stroke-width="2"/>
+    <text x="15" y="165" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#2A2421">Ceramic Carafe</text>
+    <text x="15" y="185" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">$140.00 • In Stock</text>
+    
+    <rect x="195" y="30" width="185" height="230" fill="#FFFFFF" stroke="#722F37" stroke-width="1.5"/>
+    <rect x="210" y="45" width="155" height="120" fill="#FAF6F0"/>
+    <rect x="235" y="65" width="105" height="80" fill="#E8DCC6"/>
+    <text x="210" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#2A2421">Walnut Console</text>
+    <text x="210" y="215" font-family="'JetBrains Mono', monospace" font-size="10" fill="#722F37">$1,280.00 • Crafted</text>
+  </g>
+
+  <!-- Bottom Spec -->
+  <g transform="translate(60, 365)">
+    <rect width="680" height="75" fill="#F4EFE6" rx="3"/>
+    <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#722F37">CORE ENGINE ARCHITECTURE:</text>
+    <text x="20" y="52" font-family="'JetBrains Mono', monospace" font-size="10" fill="#2A2421">HTML Payload: 12.4 KB (gzipped) • Zero Client JS for Browsing • LibSQL Embedded Replica</text>
+  </g>
+</svg>

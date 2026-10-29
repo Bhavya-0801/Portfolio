@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavya Jindal — Developer &amp; CS Student</title>
+  <meta name="description"
+    content="Portfolio of Bhavya Jindal, a B.Tech Computer Science student at JECRC University, Jaipur — passionate about building impactful solutions with web, AI, and embedded systems.">
+  <meta name="author" content="Bhavya Jindal">
+  <meta name="theme-color" content="#FAF7F2">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Bhavya Jindal — Developer &amp; CS Student">
+  <meta property="og:description"
+    content="Portfolio of Bhavya Jindal, building web apps, AI tools, and hardware projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/portrait-hero.png">
+
+  <!-- Editorial &amp; Monospace Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/animations.css">
+</head>
+
+<body>
+  <!-- Page loader -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-word">
+      <span style="animation-delay:0s">B</span><span style="animation-delay:0.05s">h</span><span
+        style="animation-delay:0.1s">a</span><span style="animation-delay:0.15s">v</span><span
+        style="animation-delay:0.2s">y</span><span style="animation-delay:0.25s">a</span>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <div class="brand-wrapper">
+        <a href="#hero" class="brand-name" aria-label="Bhavya Jindal Portfolio Home">
+          <span>Bhavya</span><span class="brand-accent">.</span>
+        </a>
+        <span class="brand-role">CS Student &amp; Developer</span>
+      </div>
+
+      <nav id="site-navigation" aria-label="Primary Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <!-- <a href="#contact" class="btn btn-secondary btn-sm">Get in Touch</a> -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-menu"
+          aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-line" id="scroll-progress-line" aria-hidden="true"></div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- ================================================================
+         HERO SECTION
+         ================================================================ -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Editorial Statement -->
+          <div class="hero-content">
+            <div class="hero-badge-row" data-reveal="fade-up" data-delay="0">
+              <span class="hero-tag">WEB · AI · EMBEDDED SYSTEMS</span>
+              <span class="hero-tag"
+                style="background: var(--color-mocha); color: var(--color-text-main); border-color: var(--color-cosmic);">JAIPUR,
+                IN</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-heading" data-reveal="fade-up" data-delay="200">
+              Building technology with <em>curiosity</em>, creativity, and real-world impact.
+            </h1>
+
+            <p class="hero-lead" data-reveal="fade-up" data-delay="350">
+              Hi, I'm Bhavya Jindal. A B.Tech Computer Science student at JECRC University, passionate about technology
+              and innovation. I build web apps, AI-powered tools, and hardware projects that solve real problems.
+            </p>
+
+            <div class="hero-actions" data-reveal="fade-up" data-delay="500">
+              <a href="#work" class="btn btn-primary">
+                <span>View My Projects</span>
+                <span class="btn-icon" aria-hidden="true">↓</span>
+              </a>
+              <a href="#about" class="btn btn-secondary">
+                <span>About Me</span>
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- Focus highlights strip -->
+            <div class="hero-stats-strip" data-reveal="fade-up" data-delay="650">
+              <div class="stat-item">
+                <span class="stat-number">01</span>
+                <span class="stat-label">Web &amp; Full-Stack Development</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">02</span>
+                <span class="stat-label">AI &amp; Computer Vision</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">03</span>
+                <span class="stat-label">Hardware &amp; Embedded Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Free-floating bg-removed portrait -->
+          <div class="hero-visual-wrapper" data-reveal="fade-left" data-delay="300">
+            <!-- Typographic watermark behind portrait -->
+            <div class="hero-watermark" aria-hidden="true">BHAVYA</div>
+
+            <!-- Free-floating cutout figure -->
+            <div class="portrait-float-wrap">
+              <!-- Decorative rings -->
+              <div class="portrait-ring portrait-ring--1" aria-hidden="true"></div>
+              <div class="portrait-ring portrait-ring--2" aria-hidden="true"></div>
+
+              <img src="/assets/portrait-hero.png" alt="Portrait of Bhavya Jindal, CS student and developer from Jaipur"
+                class="portrait-float-img" width="372" height="700" loading="eager" fetchpriority="high">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FEATURED WORK SECTION
+         ================================================================ -->
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-label">01 / Projects</span>
+          <h2 class="section-title" id="work-heading">Things I've Built</h2>
+          <p class="section-subtitle">
+            A collection of projects spanning web development, artificial intelligence, computer vision, and hardware —
+            built out of genuine curiosity and a drive to create things that work.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="work-filter-bar" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (07)</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Apps (03)</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Vision (03)</button>
+          <button class="filter-btn" data-filter="hardware" role="tab" aria-selected="false">Hardware &amp; Robotics
+            (03)</button>
+        </div>
+
+        <!-- Project Articles -->
+        <div class="project-list">
+
+          <!-- Project 01: Aarogya Darpan -->
+          <article class="project-article" data-category="web ai" data-reveal="fade-up">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">LATEST PROJECT</span>
+                <img src="/assets/project-vespera.svg" alt="Aarogya Darpan health platform interface"
+                  class="project-schematic" loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 01</span>
+                <span class="project-year">2026 · HEALTH TECH</span>
+              </div>
+              <h3 class="project-heading">Aarogya Darpan</h3>
+              <p class="project-tagline">Health &amp; Wellness Platform</p>
+              <p class="project-desc">
+                A health-focused digital platform built with TypeScript. Designed to make health information and
+                wellness tools more accessible, Aarogya Darpan bridges the gap between technology and everyday health
+                management.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">What I Learned</div>
+                <div class="highlights-text">
+                  Architecting a full-stack TypeScript application with a focus on accessibility and user experience in
+                  a health context.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Web Development</span>
+                <span class="tech-tag">Health Tech</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Bhavya-0801/Aarogya-Darpan" target="_blank" rel="noopener noreferrer"
+                  class="project-link-action">
+                  <span>View on GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: GyaanSetu -->
+          <article class="project-article" data-category="web" data-reveal="fade-up" data-delay="100">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">EDUCATION</span>
+                <img src="/assets/project-kanso.svg" alt="GyaanSetu education platform" class="project-schematic"
+                  loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 02</span>
+                <span class="project-year">2026 · ED-TECH</span>
+              </div>
+              <h3 class="project-heading">GyaanSetu</h3>
+              <p class="project-tagline">Educational Bridge Platform</p>
+              <p class="project-desc">
+                GyaanSetu (meaning "bridge of knowledge" in Hindi) is a JavaScript-based educational platform aimed at
+                connecting learners with resources and opportunities. Built to democratize access to quality learning.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">What I Learned</div>
+                <div class="highlights-text">
+                  Building a platform-oriented application that serves a socially relevant purpose, focusing on
+                  usability and content discoverability.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Ed-Tech</span>
+                <span class="tech-tag">Web Development</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Bhavya-0801/GyaanSetu" target="_blank" rel="noopener noreferrer"
+                  class="project-link-action">
+                  <span>View on GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Makerspace AI Chatbot -->
+          <article class="project-article" data-category="web ai" data-reveal="fade-up" data-delay="100">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">AI CHATBOT</span>
+                <img src="/assets/project-atelier.svg" alt="Makerspace AI Chatbot interface" class="project-schematic"
+                  loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 03</span>
+                <span class="project-year">2025 · AI</span>
+              </div>
+              <h3 class="project-heading">Makerspace AI Chatbot</h3>
+              <p class="project-tagline">Personal AI Assistant Built in JavaScript</p>
+              <p class="project-desc">
+                A personal chatbot application built with JavaScript, designed for maker and tinkerer communities.
+                Provides conversational assistance for project ideas, component queries, and technical guidance in a
+                makerspace context.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">What I Learned</div>
+                <div class="highlights-text">
+                  Integrating conversational AI APIs with a clean frontend interface, and designing context-aware
+                  responses for a niche technical audience.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">AI / Chatbot</span>
+                <span class="tech-tag">Web API</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Bhavya-0801/Makerspace-AI-Chatbot" target="_blank" rel="noopener noreferrer"
+                  class="project-link-action">
+                  <span>View on GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: Face &amp; Eye Detection -->
+          <article class="project-article" data-category="ai" data-reveal="fade-up" data-delay="100">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">COMPUTER VISION</span>
+                <img src="/assets/project-spectra.svg" alt="Face and eye detection system visualization"
+                  class="project-schematic" loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 04</span>
+                <span class="project-year">2025 · COMPUTER VISION</span>
+              </div>
+              <h3 class="project-heading">Face &amp; Eye Detection</h3>
+              <p class="project-tagline">Real-Time Detection with OpenCV &amp; Haar Cascades</p>
+              <p class="project-desc">
+                A computer vision project that detects faces and eyes in real time using OpenCV and Haar cascade
+                classifiers. Built in Python, this system demonstrates the fundamentals of classical machine learning
+                applied to image processing.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">What I Learned</div>
+                <div class="highlights-text">
+                  Working with OpenCV's cascade classifier pipeline, understanding how Haar features are computed, and
+                  optimizing frame processing for real-time performance.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Haar Cascades</span>
+                <span class="tech-tag">Computer Vision</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Bhavya-0801/Face_eye-detection" target="_blank" rel="noopener noreferrer"
+                  class="project-link-action">
+                  <span>View on GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05: Hand Gesture Mouse -->
+          <article class="project-article" data-category="ai hardware" data-reveal="fade-up" data-delay="100">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">HCI PROJECT</span>
+                <img src="/assets/project-vespera.svg" alt="Hand Gesture Mouse control system diagram"
+                  class="project-schematic" loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 05</span>
+                <span class="project-year">2025 · HCI / HARDWARE</span>
+              </div>
+              <h3 class="project-heading">Hand Gesture Mouse</h3>
+              <p class="project-tagline">Touch-Free Mouse Control via MPU6050 &amp; Arduino</p>
+              <p class="project-desc">
+                A gesture-based mouse control system using an MPU6050 accelerometer sensor and Arduino Nano. Hand
+                movements are captured via accelerometer data and transmitted to a PC through serial communication. A
+                Python script processes the data to control cursor movement and clicks in real time — enabling
+                touch-free human-computer interaction.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">What I Learned</div>
+                <div class="highlights-text">
+                  Bridging the hardware/software gap: reading raw IMU sensor data, parsing serial streams in Python, and
+                  mapping physical gestures to OS-level input events.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Arduino Nano</span>
+                <span class="tech-tag">MPU6050 IMU</span>
+                <span class="tech-tag">Serial Communication</span>
+                <span class="tech-tag">HCI</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Bhavya-0801/Hand_Gesture-Mouse" target="_blank" rel="noopener noreferrer"
+                  class="project-link-action">
+                  <span>View on GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 06: 3-Axis ArmBot -->
+          <article class="project-article" data-category="hardware" data-reveal="fade-up" data-delay="100">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">ROBOTICS</span>
+                <img src="/assets/project-kanso.svg" alt="3-Axis Robotic ArmBot diagram" class="project-schematic"
+                  loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 06</span>
+                <span class="project-year">2025 · ROBOTICS</span>
+              </div>
+              <h3 class="project-heading">3-Axis ArmBot</h3>
+              <p class="project-tagline">3-Axis Robotic Arm with Arduino Uno &amp; Servo Motors</p>
+              <p class="project-desc">
+                A beginner-friendly yet fully functional 3-Axis Robotic Armbot designed and built using an Arduino Uno,
+                three SG90 servo motors, and a breadboard. The project explores the fundamentals of servo motor control,
+                inverse kinematics, and how 3-axis robotic systems operate in real life.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">What I Learned</div>
+                <div class="highlights-text">
+                  Understanding inverse kinematics geometry, coordinating multiple servo motors simultaneously, and
+                  translating mathematical motion planning into physical hardware movement.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Arduino Uno</span>
+                <span class="tech-tag">SG90 Servo Motors</span>
+                <span class="tech-tag">Inverse Kinematics</span>
+                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">Robotics</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Bhavya-0801/3-Ais-ArmBot" target="_blank" rel="noopener noreferrer"
+                  class="project-link-action">
+                  <span>View on GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 07: SAJAG -->
+          <article class="project-article" data-category="hardware ai" data-reveal="fade-up" data-delay="100">
+            <div class="project-media-col">
+              <div class="project-frame">
+                <span class="project-offset-badge">SIH HACKATHON 2026</span>
+                <img src="/assets/project-spectra.svg" alt="SAJAG quadruped inspection robot diagram"
+                  class="project-schematic" loading="lazy">
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div class="project-header-meta">
+                <span class="project-index">PROJ // 07</span>
+                <span class="project-year">2026 · ROBOTICS / EMBEDDED</span>
+              </div>
+              <h3 class="project-heading">SAJAG — Quadruped Inspection Robot</h3>
+              <p class="project-tagline">Railway Security Robot · 7th / 100 Teams · ₹2,100 Prize</p>
+              <p class="project-desc">
+                A 4-legged autonomous inspection robot designed for Indian Railways security — letting personnel
+                remotely
+                explore dangerous or inaccessible areas without direct human exposure. Equipped with live camera feed,
+                ultrasonic obstacle detection, gas sensing, IMU orientation monitoring, and a web dashboard for remote
+                control. Built in 32 hours as <strong>Tech Lead</strong> of Team Zenith at JECRC HackQuest × Smart India
+                Hackathon 2026.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="highlights-label">Hackathon Result</div>
+                <div class="highlights-text">
+                  7th place out of 100 teams — qualified for the national round, awarded ₹2,100 cash prize. Responsible
+                  for full technical architecture: ESP32 integration, servo driver, sensor fusion, and wireless comms.
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">Quadruped Robotics</span>
+                <span class="tech-tag">Servo Motors (×8)</span>
+                <span class="tech-tag">Ultrasonic Sensing</span>
+                <span class="tech-tag">Gas Sensors</span>
+                <span class="tech-tag">IMU</span>
+                <span class="tech-tag">Web Dashboard</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://www.linkedin.com/posts/bhavya-jindal-171363367_smartindiahackathon-sih2026-jecrcuniversity-activity-7510322569325993984-re93"
+                  target="_blank" rel="noopener noreferrer" class="project-link-action">
+                  <span>View on LinkedIn</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT SECTION
+         ================================================================ -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-label">02 / About Me</span>
+          <h2 class="section-title" id="about-heading">Passionate about Technology &amp; Impact</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Left Column: Narrative Biography -->
+          <div class="about-narrative" data-reveal="fade-right">
+            <div class="about-portrait-card">
+              <div class="about-portrait-frame">
+                <img src="/assets/portrait-hero.jpg" alt="Bhavya Jindal" class="about-portrait-img" width="476"
+                  height="476" loading="lazy">
+              </div>
+              <div class="about-portrait-caption">
+                <span>BHAVYA JINDAL · 2026</span>
+                <span>JECRC UNIVERSITY</span>
+              </div>
+            </div>
+
+            <div class="about-prose">
+              <p>
+                I'm Bhavya Jindal, a B.Tech Computer Science student at JECRC University in Jaipur, Rajasthan.
+                I'm passionate about technology, innovation, and developing solutions that have real-world impact.
+              </p>
+
+              <p class="lead">
+                "Technology is most powerful when it solves real problems for real people."
+              </p>
+
+              <p>
+                My work spans multiple domains — from building full-stack web applications and AI-powered tools, to
+                wiring up Arduino-based robotics and computer vision systems. I love the moment an idea becomes
+                something tangible and useful.
+              </p>
+
+              <p>
+                Outside of coding, I explore new technologies, work on hardware projects, and look for ways to bridge
+                the gap between software and the physical world.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Technical Skills &amp; Background -->
+          <div class="about-capabilities" data-reveal="fade-left">
+
+            <!-- Education -->
+            <div class="capability-card">
+              <div class="capability-heading">
+                <span>Education</span>
+                <span class="capability-pill">Current</span>
+              </div>
+              <p class="capability-summary">
+                B.Tech in Computer Science and Engineering at JECRC University, Jaipur, Rajasthan.
+              </p>
+              <div class="capability-skills-list">
+                <span class="skill-badge">B.Tech CSE</span>
+                <span class="skill-badge">JECRC University</span>
+                <span class="skill-badge">Jaipur, Rajasthan</span>
+                <span class="skill-badge">Enrolled 2025</span>
+              </div>
+            </div>
+
+            <!-- Languages &amp; Technologies -->
+            <div class="capability-card">
+              <div class="capability-heading">
+                <span>Languages &amp; Technologies</span>
+                <span class="capability-pill">Skills</span>
+              </div>
+              <p class="capability-summary">
+                Building across the stack — from web interfaces to embedded hardware.
+              </p>
+              <div class="capability-skills-list">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">TypeScript</span>
+                <span class="skill-badge">HTML &amp; CSS</span>
+                <span class="skill-badge">Arduino (C++)</span>
+                <span class="skill-badge">OpenCV</span>
+                <span class="skill-badge">ESP32</span>
+                <span class="skill-badge">Web APIs</span>
+                <span class="skill-badge">Serial Communication</span>
+              </div>
+            </div>
+
+            <!-- Quick Facts -->
+            <div class="capability-card">
+              <div class="capability-heading">
+                <span>At a Glance</span>
+                <span class="capability-pill">Profile</span>
+              </div>
+              <div class="about-quick-facts">
+                <div class="quick-fact-row">
+                  <span class="quick-fact-label">University</span>
+                  <span class="quick-fact-val">JECRC University</span>
+                </div>
+                <div class="quick-fact-row">
+                  <span class="quick-fact-label">Degree</span>
+                  <span class="quick-fact-val">B.Tech CSE</span>
+                </div>
+                <div class="quick-fact-row">
+                  <span class="quick-fact-label">Year</span>
+                  <span class="quick-fact-val">1st Year · 2025 Batch</span>
+                </div>
+                <div class="quick-fact-row">
+                  <span class="quick-fact-label">Location</span>
+                  <span class="quick-fact-val">Jaipur, Rajasthan</span>
+                </div>
+                <div class="quick-fact-row">
+                  <span class="quick-fact-label">Focus</span>
+                  <span class="quick-fact-val">Web · AI · Embedded</span>
+                </div>
+                <div class="quick-fact-row">
+                  <span class="quick-fact-label">Status</span>
+                  <span class="quick-fact-val">Open to Collaborations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Areas of Interest -->
+            <div class="ethos-block">
+              <h3 class="ethos-title">Areas of Interest</h3>
+              <ul class="ethos-list">
+                <li class="ethos-item">
+                  <span class="ethos-bullet">01.</span>
+                  <div><strong>Web &amp; App Development:</strong> Building full-stack applications with TypeScript and
+                    JavaScript that are fast, accessible, and genuinely useful.</div>
+                </li>
+                <li class="ethos-item">
+                  <span class="ethos-bullet">02.</span>
+                  <div><strong>AI &amp; Computer Vision:</strong> Applying machine learning and image processing — from
+                    real-time face detection to AI chatbots — to solve human-facing problems.</div>
+                </li>
+                <li class="ethos-item">
+                  <span class="ethos-bullet">03.</span>
+                  <div><strong>Hardware &amp; Embedded Systems:</strong> Bridging software and the physical world
+                    through Arduino, ESP32, sensors, and robotics — turning ideas into things you can hold.</div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ACHIEVEMENTS, CERTIFICATIONS & LEADERSHIP SECTION
+         ================================================================ -->
+    <section class="achievements-section" id="achievements" aria-labelledby="achievements-heading">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-label">03 / Recognition</span>
+          <h2 class="section-title" id="achievements-heading">Achievements &amp; Leadership</h2>
+          <p class="section-subtitle">
+            Highlights from hackathons, academic pursuits, and leadership roles that have shaped how I think and build.
+          </p>
+        </div>
+
+        <div class="achievements-grid" data-reveal="fade-up">
+
+          <!-- Hackathon Achievement -->
+          <div class="achievement-card achievement-card--highlight">
+            <div class="achievement-card-header">
+              <span class="achievement-icon">🏆</span>
+              <span class="achievement-category">HACKATHON</span>
+            </div>
+            <h3 class="achievement-title">Smart India Hackathon 2026</h3>
+            <p class="achievement-subtitle">JECRC HackQuest × SIH 2026 — 7th / 100 Teams</p>
+            <p class="achievement-desc">
+              Led the technical architecture of <strong>SAJAG</strong>, a quadruped robotic inspection system for Indian
+              Railways, as <strong>Tech Lead of Team Zenith</strong>. Designed and implemented the ESP32 integration,
+              servo driver, sensor fusion (ultrasonic + gas + IMU), wireless comms, and web dashboard — in 32 hours.
+            </p>
+            <div class="achievement-meta-strip">
+              <span class="achievement-badge">₹2,100 Prize</span>
+              <span class="achievement-badge">National Round Qualifier</span>
+              <span class="achievement-badge">Team Zenith</span>
+            </div>
+          </div>
+
+          <!-- Tech Lead Role -->
+          <div class="achievement-card">
+            <div class="achievement-card-header">
+              <span class="achievement-icon">⚡</span>
+              <span class="achievement-category">LEADERSHIP</span>
+            </div>
+            <h3 class="achievement-title">Tech Lead — Team Zenith</h3>
+            <p class="achievement-subtitle">JECRC HackQuest × SIH 2026</p>
+            <p class="achievement-desc">
+              Served as the sole technical lead for a 6-member cross-functional team. Responsible for hardware–software
+              integration, real-time system architecture, and guiding the team from concept to working prototype under
+              competition pressure.
+            </p>
+            <div class="achievement-meta-strip">
+              <span class="achievement-badge">Hardware Lead</span>
+              <span class="achievement-badge">Systems Architecture</span>
+              <span class="achievement-badge">32-Hour Sprint</span>
+            </div>
+          </div>
+
+          <!-- Learning &amp; Skills -->
+          <div class="achievement-card">
+            <div class="achievement-card-header">
+              <span class="achievement-icon">📚</span>
+              <span class="achievement-category">LEARNING</span>
+            </div>
+            <h3 class="achievement-title">Self-Directed Technical Growth</h3>
+            <p class="achievement-subtitle">Ongoing · 2025–Present</p>
+            <p class="achievement-desc">
+              Built a diverse technical portfolio within the first year of university — spanning full-stack web
+              development, computer vision, hardware prototyping, and robotics — all through hands-on projects and
+              self-directed learning outside the curriculum.
+            </p>
+            <div class="achievement-meta-strip">
+              <span class="achievement-badge">7 Projects</span>
+              <span class="achievement-badge">5 Tech Domains</span>
+              <span class="achievement-badge">GitHub · 8 Repos</span>
+            </div>
+          </div>
+
+          <!-- Current Focus -->
+          <div class="achievement-card">
+            <div class="achievement-card-header">
+              <span class="achievement-icon">🎯</span>
+              <span class="achievement-category">FOCUS</span>
+            </div>
+            <h3 class="achievement-title">Open to Collaborations &amp; Opportunities</h3>
+            <p class="achievement-subtitle">Available Now</p>
+            <p class="achievement-desc">
+              Actively seeking internships, hackathon teams, research collaborations, and open-source contributions in
+              the domains of AI, embedded systems, and full-stack web development. Particularly interested in projects
+              with meaningful real-world applications.
+            </p>
+            <div class="achievement-meta-strip">
+              <span class="achievement-badge">Internships</span>
+              <span class="achievement-badge">Hackathons</span>
+              <span class="achievement-badge">Open Source</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT SECTION
+         ================================================================ -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-label">04 / Contact</span>
+          <h2 class="section-title" id="contact-heading">Let's Connect</h2>
+          <p class="section-subtitle">
+            Whether you want to collaborate on a project, discuss an idea, or just say hello — I'm always happy to talk.
+            Reach out through any of the channels below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left Column: Direct Access Details -->
+          <div class="contact-info-col">
+            <p class="contact-lead">
+              I'm a CS student open to collaborations, internship opportunities, hackathon teams, and interesting side
+              projects. Let's build something together.
+            </p>
+
+            <!-- Direct Email Action Box -->
+            <div class="email-action-box">
+              <div class="email-box-label">Email</div>
+              <div class="email-address-row">
+                <span class="email-address-text">bhavyajindal830@gmail.com</span>
+                <button class="copy-email-btn" id="copy-email-btn"
+                  aria-label="Copy Bhavya's email address to clipboard">
+                  <span>Copy Address</span>
+                </button>
+              </div>
+              <div class="copy-toast" id="copy-toast" role="status">
+                ✓ Copied to clipboard.
+              </div>
+            </div>
+
+            <!-- Metadata Details -->
+            <div class="contact-meta-strip">
+              <div class="meta-row">
+                <span class="meta-label">LOCATION</span>
+                <span class="meta-val">Jaipur, Rajasthan, India</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">LOCAL TIME</span>
+                <span class="meta-val" id="ist-clock">Loading IST...</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">STATUS</span>
+                <span class="meta-val">Open to Collaborations &amp; Opportunities</span>
+              </div>
+            </div>
+
+            <!-- Professional Links -->
+            <div>
+              <div class="email-box-label" style="margin-bottom: 0.75rem;">Find Me Online</div>
+              <div class="social-links-list">
+                <a href="https://github.com/Bhavya-0801" target="_blank" rel="noopener noreferrer"
+                  class="social-link-item">
+                  <span>GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/bhavya-jindal-171363367/" target="_blank" rel="noopener noreferrer"
+                  class="social-link-item">
+                  <span>LinkedIn</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--color-text-main);">Send
+              a Message</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+              Fill this out and I'll get back to you as soon as I can.
+            </p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Ananya Sharma" required
+                  autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="ananya@example.com" required
+                  autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="topic" class="form-label">What's it about?</label>
+                <select id="topic" name="topic" class="form-select">
+                  <option value="collab">Project Collaboration</option>
+                  <option value="internship">Internship / Opportunity</option>
+                  <option value="hackathon">Hackathon / Team Up</option>
+                  <option value="general">Other...</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea"
+                  placeholder="Tell me what you have in mind..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </button>
+
+              <div id="form-status" class="form-status-message" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand">Bhavya<span style="color: var(--color-mocha);">.</span></div>
+          <p class="footer-tagline">
+            CS student &amp; developer from Jaipur. Building web apps, AI tools, and hardware projects — one commit
+            at a time.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#work" class="footer-link">Projects</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#achievements" class="footer-link">Achievements</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Bhavya Jindal. Handcrafted with HTML, CSS &amp; JavaScript.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/animations.js"></script>
+</body>
+
+</html>
